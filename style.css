@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+    background: #111;
+    color: white;
+}
+
+.page-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    line-height: 23px;
+}
+
+.icon-list-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icon-element {
+    width: 140px;
+    text-align: center;
+    height: 60px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+.icon-element:hover {
+    border-color: white;
+    cursor: pointer;
+}
+.icon-element span {
+    display: block;
+    margin: 0 auto;
+}
+svg {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.select-pulse {
+    animation: pulse 0.5s ease-out;
+}
+
+
+@keyframes pulse {
+    0% {
+        background: white;
+    }
+    100% {
+        background: transparent;
+    }
+}
